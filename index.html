@@ -11,13 +11,19 @@
 <body>
   <!-- nav bar block -->
   <nav class="nav vertical">
-    
       <div class="nav-left">
         <div class="nav__logo"><a href="#">Levi Studio</a></div>
-    
         <ul class="nav__menu">
-          <li class="nav__menu-item"> <a href="#">Портфолио</a></li>
-          <!-- hidden items will be here -->
+          <div class="dropdown">
+            <li class="nav__menu-item"> <a href="#" >Портфолио</a></li>
+            <!-- hidden items -->
+              <ul class="portfolio__content">
+                <li class="portfolio__content-item"><a href="#">Портреты</a></li>
+                <li class="portfolio__content-item"><a href="#">Fashion</a></li>
+                <li class="portfolio__content-item"><a href="#">Свадьбы</a></li>
+                <li class="portfolio__content-item"><a href="#">Семейные</a></li>
+              </ul>
+          </div>
           <li class="nav__menu-item"> <a href="#">Видео</a></li>
           <li class="nav__menu-item"> <a href="#">Об авторе</a>	</li>
           <li class="nav__menu-item"> <a href="#">Отзывы</a>	</li>

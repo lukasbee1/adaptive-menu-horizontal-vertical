@@ -34,10 +34,8 @@ body {
   margin: auto 10px;
 }
 .nav__menu-item{
-
   list-style-type: none;
-  margin-right: 40px;
-
+  margin: auto 20px;
 }
 .nav__menu-item:hover a{
   color: rgb(155, 155, 155);
@@ -62,5 +60,36 @@ body {
   margin: 40px;
 }
 .vertical .nav__menu-item{
-  margin-bottom: 25px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.vertical .portfolio__content {
+  margin-bottom: 15px;
+}
+.vertical .portfolio__content-item {
+  margin: 0 0 10px 0;
+}
+
+/* drop-down menu  */ 
+.portfolio__content {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+}
+.portfolio__content-item {
+  text-align: left;
+  margin: 0px 70px 10px 20px;
+}
+.portfolio__content-item:hover a {
+  color: rgb(155, 155, 155);  
+}
+ .dropdown:hover .portfolio__content {
+  display: flex;
+}
+/* drop-down horizontal */
+
+.horizontal .portfolio__content {
+  position: absolute;
+  padding-top: 20px;
 }
