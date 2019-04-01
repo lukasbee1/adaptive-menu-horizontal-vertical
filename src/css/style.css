@@ -14,29 +14,53 @@ body {
 /* navigation styling */
 .nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   background: #fff;
 }
+.nav-left {
+  display: flex;
+}
 .nav__logo{
   font-size: 36px;
-  margin: auto 40px;
-  padding: 15px 0;
+  margin: auto 50px;
   white-space: nowrap;
 }
 .nav__menu{
   font-size: 18px;
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
-
+  justify-content: flex-start;
+  margin: auto 10px;
 }
 .nav__menu-item{
-  list-style-type: none;
-  margin: auto 10px;
 
+  list-style-type: none;
+  margin-right: 40px;
 
 }
 .nav__menu-item:hover a{
   color: rgb(155, 155, 155);
+}
+.nav-search {
+  margin: 40px;
+}
+/* vertical styling */
+.vertical {
+  width: 300px;
+  height: 900px;
+  flex-direction: column;
+}
+.vertical .nav-left{
+  flex-direction: column;
+}
+.vertical .nav__logo {
+  margin: 40px;
+}
+.vertical .nav__menu{
+  flex-direction: column;
+  margin: 40px;
+}
+.vertical .nav__menu-item{
+  margin-bottom: 25px;
 }
